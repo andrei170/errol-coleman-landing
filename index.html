@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flow Academy: Learn to Read Order Flow with Errol Coleman</title>
+<meta name="description" content="Stop guessing the chart. Learn to read the order flow underneath the price with tastylive host Errol Coleman. Daily live breakdowns and a real framework, no signals.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Flow Academy: Read Order Flow with Errol Coleman">
+<meta property="og:description" content="See where the real money is moving before the candle closes. The order-flow method, taught daily.">
+<meta property="og:url" content="https://andrei170.github.io/errol-coleman-landing/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flow Academy: Read Order Flow with Errol Coleman">
+<meta name="twitter:description" content="See where the real money is moving before the candle closes. The order-flow method, taught daily.">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;📈&lt;/text&gt;&lt;/svg&gt;">
 <style>
   :root{--blue:#0693E3;--blue-dk:#0a6fb0;--bg:#0e0f11;--surface:#17191c;--surface2:#1f2226;--line:#2a2e33;--text:#eef1f4;--muted:#9aa3ad;--gold:#FAE3AC;--clay:#D3513E}
   *{margin:0;padding:0;box-sizing:border-box}
@@ -29,6 +38,13 @@
   .hero{padding:90px 0 70px;background:radial-gradient(1200px 500px at 70% -10%,rgba(6,147,227,.18),transparent)}
   .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
   .hero-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px}
+  .fp{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-bottom:18px;font-variant-numeric:tabular-nums}
+  .fp .cell{background:var(--surface2);border:1px solid var(--line);border-radius:5px;padding:7px 4px;text-align:center;font-size:12px;font-weight:600;color:var(--muted);position:relative}
+  .fp .cell .bd{color:#54d18c}.fp .cell .ak{color:#e2735f;font-size:11px}
+  .fp .cell.buy{background:linear-gradient(180deg,rgba(84,209,140,.22),transparent);border-color:rgba(84,209,140,.4)}
+  .fp .cell.sell{background:linear-gradient(180deg,rgba(226,115,95,.22),transparent);border-color:rgba(226,115,95,.4)}
+  .fp .px{grid-column:1/-1;display:flex;justify-content:space-between;color:var(--muted);font-size:11px;letter-spacing:.5px;margin-bottom:2px}
+  .fp-cap{font-size:12px;color:var(--muted);margin:-8px 0 16px;text-align:center}
   .stat-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px}
   .stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px;flex:1;min-width:140px}
   .stat b{display:block;font-size:26px;color:var(--blue);font-weight:800}
@@ -73,6 +89,18 @@
     </div>
   </div>
   <div class="hero-card reveal in">
+    <div class="fp" aria-hidden="true">
+      <div class="px"><span>BID</span><span>ASK</span></div>
+      <div class="cell"><span class="bd">182</span> x <span class="ak">94</span></div>
+      <div class="cell buy"><span class="bd">410</span> x <span class="ak">120</span></div>
+      <div class="cell"><span class="bd">96</span> x <span class="ak">88</span></div>
+      <div class="cell sell"><span class="bd">71</span> x <span class="ak">355</span></div>
+      <div class="cell"><span class="bd">120</span> x <span class="ak">110</span></div>
+      <div class="cell buy"><span class="bd">388</span> x <span class="ak">102</span></div>
+      <div class="cell buy"><span class="bd">512</span> x <span class="ak">140</span></div>
+      <div class="cell"><span class="bd">90</span> x <span class="ak">95</span></div>
+    </div>
+    <p class="fp-cap">Reading the footprint: where orders absorb and momentum turns</p>
     <h3>What you will learn to see</h3>
     <ul class="check">
       <li>Where big orders are stacking before price reacts</li>
@@ -112,7 +140,25 @@
 <section id="proof"><div class="wrap" style="text-align:center">
   <div class="eyebrow reveal">Built on a real track record</div>
   <h2 class="reveal">Not a faceless signal group.</h2>
-  <p class="lead reveal" style="margin:18px auto 0">Errol hosts on tastylive, was seeded and mentored by tastytrade founder Tom Sosnoff, and has built a community of over 1,300 traders learning the order-flow method. The teaching is public, on the record, every single day.</p>
+  <p class="lead reveal" style="margin:18px auto 26px">Errol hosts on tastylive, was seeded and mentored by tastytrade founder Tom Sosnoff, and has built a community of over 1,300 traders learning the order-flow method. The teaching is public, on the record, every single day.</p>
+  <div class="grid3" style="text-align:left">
+    <div class="card reveal"><h3>tastylive host</h3><p>Live on the tastylive network, teaching order flow to a national trading audience.</p></div>
+    <div class="card reveal"><h3>Sosnoff-backed</h3><p>Seeded and mentored by tastytrade founder Tom Sosnoff, who built thinkorswim and tastyworks.</p></div>
+    <div class="card reveal"><h3>1,300+ in the room</h3><p>A community of committed traders already learning the method together every day.</p></div>
+  </div>
+</div></section>
+
+<section id="cheatsheet" style="background:var(--surface)"><div class="wrap">
+  <div class="offer reveal" style="border-color:var(--line)">
+    <div class="eyebrow">Free to start</div>
+    <h2>Get the Order Flow Cheat Sheet</h2>
+    <p style="color:var(--muted);max-width:540px;margin:0 auto 22px">Not ready for the cohort yet? Grab the one-page cheat sheet that shows you how to read the footprint, delta, and liquidity at a glance. Sent straight to your inbox.</p>
+    <form onsubmit="return false" style="display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap">
+      <input type="email" placeholder="Your best email" required style="flex:1;min-width:200px;padding:14px 16px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-size:15px">
+      <button class="btn" type="submit">Send it to me</button>
+    </form>
+    <p style="color:var(--muted);font-size:12px;margin-top:12px">No spam. Just the cheat sheet and the occasional market breakdown.</p>
+  </div>
 </div></section>
 
 <section id="join" style="background:radial-gradient(900px 400px at 50% 0%,rgba(6,147,227,.16),transparent)"><div class="wrap">
